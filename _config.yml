@@ -1,0 +1,64 @@
+#
+###################################
+# Site wide configuration
+####################################
+#
+title:       "RGSoC 2016 | Team JaM"
+description: "Home of Team JaM, Rails Girls Summer of Code 2016."
+url:         "https://rgsoc-jam.github.io"
+
+#
+###################################
+# Jekyll configuration
+####################################
+#
+timezone:          US/Pacific
+markdown:          kramdown
+highlighter:       rouge
+excerpt_separator: <!--more-->
+permalink:         /articles/:year-:month/:title
+
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  enable_coderay: false
+
+#
+###################################
+# Site Owner configuration
+####################################
+#
+owner:
+  name: Team JaM
+  avatar: avatar.jpg
+  job: "Rails Girls Summer of Code 2016"
+  bio: "Jeena Lee & Malisa Smith<br>We hack on Servo!"
+  email:
+  disqus-shortname:
+  twitter:
+  facebook:
+  google:
+    plus:
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: rgsoc-jam
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  codepen: #username
