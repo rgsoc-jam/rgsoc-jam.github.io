@@ -25,6 +25,9 @@ kramdown:
   toc_levels:     1..6
   enable_coderay: false
 
+gems:
+  - jemoji
+
 #
 ###################################
 # Site Owner configuration
