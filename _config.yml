@@ -36,6 +36,7 @@ gems:
 owner:
   name: Team JaM
   avatar: avatar.jpg
+  hover-avatar: profile_jam_funny.jpg
   job: "Rails Girls Summer of Code 2016"
   bio: "Jeena Lee & Malisa Smith<br>We hack on Servo!"
   email:

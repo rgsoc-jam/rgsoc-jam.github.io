@@ -1,8 +1,11 @@
 {% if page.author %} {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.owner %} {% endif %}
 
 <div class="cover-card table-cell table-middle">
-  {% if author.avatar %}
-  <img src="{{ site.url }}/img/{{ author.avatar }}" alt="" class="avatar">
+  {% if author.avatar and author.hover-avatar %}
+  <img src="{{ site.url }}/img/{{ author.avatar }}" 
+       onmouseover="this.src='{{ site.url }}/img/{{ author.hover-avatar }}';"
+       onmouseout="this.src='{{ site.url }}/img/{{ author.avatar }}';"
+       alt="" class="avatar">
   {% endif %}
   <a href="{{ site.url }}/" class="author_name">{{ author.name }}</a>
   <span class="author_job">{{ author.job }}</span>
