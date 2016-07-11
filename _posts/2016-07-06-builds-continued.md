@@ -8,7 +8,7 @@ tags: [log]
 authors: Jeena and Malisa
 ---
 
-## Things we did:  
+## Things we did:
 - Had a kick-off call to say [hi](https://pics.onsizzle.com/Instagram-PIZZA-86ce5e.png), discuss various logistics, and the best way to ramp up to speed on Servo
     - We are planning on spending Thursday working on an E-Easy tagged Servo issue with our coaches, just to get used to the workflow
     - In terms of dividing our time between learning Rust and working on Servo, the consensus was that it is good to know enough Rust to understand basic Servo code, but it is also important to dive into the issues!
