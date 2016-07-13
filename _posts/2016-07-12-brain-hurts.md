@@ -26,7 +26,7 @@ authors: Jeena and Malisa
     - In `components/script/Cargo.toml`, add `use unicase="1.4.0"`.
 - `Cow` automatically handles copy and writing when you have a borrowed immutable reference.
 - Emacs tip "defining macro":
-    - `C-x (` <define macro> `C-x )` `C-e`
+    - `C-x (` (define macro) `C-x )` `C-e` (execute macro)
 - `String` is guaranteed to be UTF8 and is heap-allocated (and therefore growable). `&str` is a `string-slice`. `dom::bindings::str::ByteString` is not guaranteed to be UTF8.
 - If `Result` only returns an error, use `Result<(), Error>`.
 - For Boolean matching in Rust, use `&&`.
