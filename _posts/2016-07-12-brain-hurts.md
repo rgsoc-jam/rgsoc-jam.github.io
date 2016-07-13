@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Day 7: Our brains hurt from learning so much"
-date:   2016-07-08
+date:   2016-07-12
 categories: [log]
 comments: false
 tags: [log, rust, servo]
