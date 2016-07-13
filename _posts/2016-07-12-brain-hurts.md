@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Day 6: Our brains hurt from learning so much"
+title:  "Day 7: Our brains hurt from learning so much"
 date:   2016-07-08
 categories: [log]
 comments: false
