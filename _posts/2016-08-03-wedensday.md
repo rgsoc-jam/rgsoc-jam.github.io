@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Day 23:"
+title:  "Day 23: Just What I Needed"
 date:   2016-08-03
 categories: [log]
 comments: false
