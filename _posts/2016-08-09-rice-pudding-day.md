@@ -29,7 +29,7 @@ authors: Jeena and Malisa
 3
 >>> add.__doc__
 'Adds a to b'
-{ & endhighlight %}
+{% endhighlight %}
 
 - To go to a specific line in Emacs: `M+g g`, then enter line number. :tropical_drink:
 
