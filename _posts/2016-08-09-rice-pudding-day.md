@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Day 26: Happy Rice Pudding Day!"
+title:  "Day 27: Happy Rice Pudding Day!"
 date:   2016-08-09
 categories: [log]
 comments: false
