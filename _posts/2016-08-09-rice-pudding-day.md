@@ -4,7 +4,7 @@ title:  "Day 26: Happy Rice Pudding Day!"
 date:   2016-08-09
 categories: [log]
 comments: false
-tags: [log, servo]
+tags: [log, servo, emacs]
 authors: Jeena and Malisa
 ---
 
