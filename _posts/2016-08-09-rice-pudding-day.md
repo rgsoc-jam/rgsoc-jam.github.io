@@ -31,7 +31,7 @@ authors: Jeena and Malisa
 'Adds a to b'
 {% endhighlight %}
 
-- To go to a specific line in Emacs: `M+g g`, then enter line number. :tropical_drink:
+- To go to a specific line in Emacs: `M-g g`, then enter line number. :tropical_drink:
 
 ## TODO:
 - Response:
