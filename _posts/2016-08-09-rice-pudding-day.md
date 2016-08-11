@@ -18,7 +18,7 @@ authors: Jeena and Malisa
 
 ## Things we learned:
 - Learned a little about [`lex` and `yacc`](http://www.dabeaz.com/ply/ply.html) for string parsing, with the help of Nick.
-  - valid Python code using doc comments:
+- valid Python code using doc comments:
 
 {% highlight python %}
 >>> def add(a, b):
