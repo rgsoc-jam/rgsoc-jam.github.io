@@ -30,7 +30,7 @@ println!("{:p}", &x);
 
 *A Fun Debugging Tale*
 Below is the test that was failing, and I was debugging:
-{& highlight javascript %}
+{& highlight js %}
 test(function() {
   var initialHeaders = new Headers([["Content-Type", "potato"]]);
   var initialRequest = new Request("", {"headers" : initialHeaders});
