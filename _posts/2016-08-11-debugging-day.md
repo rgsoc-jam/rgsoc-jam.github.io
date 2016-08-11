@@ -28,7 +28,8 @@ println!("{:p}", &x);
 
 - Approach debugging as if performing a scientific experiment. Do you have a hypothesis where it might be breaking? Sprinkle some print statements in the code, or set breaking points in the debugger. Study the results. Can you find a pointer that would lead to the next hypothesis? Repeat! And don't get frustrated!
 
-*A Fun Debugging Tale*
+**A Fun Debugging Tale**
+
 Below is the test that was failing, and I was debugging:
 {% highlight js %}
 test(function() {
