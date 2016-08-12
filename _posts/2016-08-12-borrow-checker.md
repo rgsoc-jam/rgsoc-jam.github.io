@@ -22,7 +22,7 @@ authors: Jeena and Malisa
 
 - Reflog is what git uses to keep track of updates to the tip of branches, including those that are invisible on git log! This acts as a great safety net. For example, if you want to undo git rebase, you can find the `HEAD` of pre-rebase, and `git reset --hard` to that `HEAD`.
 
-- You cannot modify a field that is in a borrowed context. There are a few things going on in this code:
+- You cannot modify a field that is in a borrowed context. This is a sample code.
 {% highlight rust %}
 fn Referrer(&self) -> USVString {
     let r = self.request.borrow();
@@ -37,6 +37,7 @@ fn Referrer(&self) -> USVString {
     })
 }
 {% endhighlight %}
+- A few things to notice in the code:
     - The reason there are `r` and `referrer` is that if it's written into one line (`let r_referrer = self.request.borrow().referer.borrow()`), it will throw a life time error. See [here](https://rgsoc-jam.github.io/articles/2016-08/cat-day).
     - In `match` if `referrer` does not have `&*`, it will throw a type mismatch error. This is because `referrer` is a `Ref<>` type, and it is trying to match against `Referer` enum.
     - So, you may want to dereference (`*referrer`) so that you can use `referrer` as a `Referer` enum type through deref coercions. However, that will be trying to move `referrer` out of borrowed context.
