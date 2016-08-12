@@ -47,6 +47,7 @@ fn Referrer(&self) -> USVString {
 - Response API:
     - Deal with current build errors (now the side-effects of wrapping headers with `Rc` and `RefCell` are appearing in places like fetch/methods.rs, uh oh)
     - And then modify `net_traits::request::Request` and `dom::headers` as well......
+    - Implement JSTraceable for `RefCell` in `dom::Headers`
     - And then finally work on dom::Response! >:|
 - Request API:
     - If merge happens, start working on making Headers iterable based on jdm's [PR](https://github.com/servo/servo/pull/12819).
