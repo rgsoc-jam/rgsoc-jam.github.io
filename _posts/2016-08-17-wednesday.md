@@ -18,7 +18,7 @@ authors: Jeena and Malisa
   - still confused about how everything integrates together with the network-level stuff
 
 ## Things we learned:
-    - We are still a long ways off from understanding how Fetch works!
+- We are still a long ways off from understanding how Fetch works!
 
 ## TODO:
 - Headers (Jeena)
