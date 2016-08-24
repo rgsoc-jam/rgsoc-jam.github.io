@@ -9,7 +9,10 @@ authors: Jeena and Malisa
 ---
 
 ## Things we did:
-- Headers/Fetch
+- Miscellaneous
+    - Made [mug brownies](https://encrypted.google.com/search?hl=en&q=mug%20brownie%20recipe), which were delish.
+
+- Headers
     - [PR](https://github.com/servo/servo/pull/12998) is merged!
     - [PR](https://github.com/servo/servo/pull/13004) sparked some discussion… This might take a bit longer to resolve. Tried to implement header values to be stored as `Vec<Vec<u8>>` in which the inner vector is one header value. Not sure how this will mesh with hyper::header::Header existing methods. (Or, how do I separate the different header values? Will the comma have to be added as a separate vector?)
 - Fetch
