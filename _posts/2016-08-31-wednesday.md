@@ -8,7 +8,7 @@ tags: [log, servo]
 authors: Jeena and Malisa
 ---
 
-[Purrling](http://i.imgur.com/EbolG1m.gifv)*
+[Purrling](http://i.imgur.com/EbolG1m.gifv)<sup>1</sup>
 
 ## Things we did:
 - Response
@@ -27,4 +27,4 @@ authors: Jeena and Malisa
 - Promise in Fetch
    - After few trial and error, as long as `Fetch.webidl` states that it returns a `void` (not `Promise`), the code compiles! I’ll keep building on top of it...
 
-* absolutely not work-related
+<sup>1</sup> absolutely not work-related
