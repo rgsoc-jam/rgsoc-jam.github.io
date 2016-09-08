@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Day 45: Dear Promise, please promise me you'll be complete one day. Love, jam"
-date:   2016-09-07
+date:   2016-09-06
 categories: [log]
 comments: false
 tags: [log, servo]
