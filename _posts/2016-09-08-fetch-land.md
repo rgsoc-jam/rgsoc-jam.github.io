@@ -15,9 +15,9 @@ authors: Jeena and Malisa
 - Promise in Fetch
     - Today was indeed a different day! I started working on implementing the `FetchResponseListener`. `FetchResponseListener` is invoked when (I think) the network level fetch gets some data back. For example, a method in `FetchResponseListener` is `process_response`, which will update the response object with the data it got back from fetching.
     - Josh suggested not worrying about the FetchContext, which will be the struct to hold promise and response together, until later. Creating the FetchContext will require a lot of wrappings.
-        - The fetch listener (`FetchContext`) has to be `Arc<Mutex<T>>`. Inside `FetchContext`, there will be `response_object` with type `Response` and `promise` with type `Rc<Promise>`. Both of them will need to be wrapped with `Trusted` to be shared across threads safely.
-        - I think `response_object` should be wrapped wtih `DOMRefCell` to allow inner mutability, but we shall see. `response_object` has to be rooted as well, so it will be `Root<Response>` type. (so `Trusted<DOMRefCell<Root<Response>>>>`..?) Josh said that since FetchResponseListener will be implemented on FetchContext, calling `self.response.root()` will obtain a Root<Response> value in the callbacks that can be manipulated like usual.
-        - `promise` is `Rc<T>` so we will need a method that will pull out `Rc` from `Trusted`, like `self.response.root()` would.
+        - The fetch listener (`FetchContext`) has to be `Arc<Mutex<T>>`. Inside `FetchContext`, there will be `response_object` with type `Response` and `promise` with type `Rc<Promise>`. Both `response_object` and `promise` will need to be wrapped with `Trusted` to be shared across threads safely. `Trusted` is a "safe wrapper around a raw pointer to a DOM object", so `response_object` and `promise` can be `Trusted<Response>` and `Trusted<Promise>`.
+        - I think `response_object` should be wrapped wtih `DOMRefCell` to allow inner mutability, but we shall see. If this is true, `response_object` will be `DOMRefCell<Trusted<Response>>`..? Josh said that since FetchResponseListener will be implemented on FetchContext, calling `self.response_object.root()` will obtain a `Root<Response>` value in the callbacks that can be manipulated like usual.
+        - `promise` is `Rc<T>` so we will need a method that will pull out `Rc<T>` from `Trusted<T>`, like `self.response_object.root()` would.
 
 - Body
     - Wrote step 34 of Request constructor to extract Body contents. The [extract body method](https://dxr.mozilla.org/servo/source/components/script/dom/xmlhttprequest.rs?q=path%3Axmlhttprequest.rs&redirect_type=single#1352) still doesn't use ReadableStream so I'm not sure if it will need to be rewritten.
@@ -32,6 +32,6 @@ authors: Jeena and Malisa
 - Promise in Fetch
     - make FetchContext struct (on hold)
     - Impl FetchResponseListener for FetchContext (may require helper functions)
-    - resolve/reject promise in fetch (figure out how to use `maybe_reject_errpr`, etc.)
+    - resolve/reject promise in fetch (figure out how to use `maybe_reject_error`, etc.)
 - Body
     - implement the rest of the body interface for dom::Response
