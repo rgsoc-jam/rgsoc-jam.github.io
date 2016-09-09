@@ -10,7 +10,6 @@ authors: Jeena and Malisa
 
 ## Things we did:
 - Miscellaneous
-    - Yesterday, we went to PDX Rust meetup, which was great! A lot of people visiting Portland for RustConf showed up, so it was lovely :fireworks:. Nick Cameron talked about common Rust patterns and a [repo](https://github.com/nrc/patterns) to catalogue them. Jamey Sharp talked about [Corrode](https://github.com/jameysharp/corrode), a software that translates C source files to Rust source files using Haskell(!).
     - Today we had a monthly meeting with everyone, and it was gooood :+1:. Special thanks to Scott for the pep talk! Also, we picked and ate [figs from the fig tree](http://imgur.com/X5FGlgZ?r) by Jeena's home as a break :deciduous_tree:.
 
 - Promise in Fetch
