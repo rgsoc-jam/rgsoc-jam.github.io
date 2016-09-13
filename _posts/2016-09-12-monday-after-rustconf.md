@@ -39,7 +39,7 @@ Malisa is sick :cry: and focused on getting better :tea:
 - assigning different types to the same binding name (via let statements) seems to be acceptable practice, at least in some contexts.
 - `0x0` is the synonym to null pointer in C++! If your stack backtrace includes `0x0`
 - When debugging Servo, you can use the `--debug` tag, i.e. `./mach run -d ~/src/fetch_example.html --debug`. Servo uses lldb debugger by default.
-- You can set a breakpoint, for example, if you want the code to pause when it calls `rust_panic` function, you can write `b rust_panic` <ENTER> `run`.
+- You can set a breakpoint, for example, if you want the code to pause when it calls `rust_panic` function, you can write `b rust_panic` `<ENTER>` `run`.
 - While you're at the breakpoint, (or maybe some other time too but I'm not too sure) you can type `bt` which will print all the backtrace! COOL.
 - `Rc` and `Trusted` has to maintain a 1:1 relationship, and therefore, `Trusted` should not have a `&self` parameter because that could break that 1:1 constraint. In Servo's promise, `Rc` counts the references, and therefore `TrustedPromise` has to be connected to the one and only `Rc<Promise>`, because otherwise, the reference count will be incorrect.
 
