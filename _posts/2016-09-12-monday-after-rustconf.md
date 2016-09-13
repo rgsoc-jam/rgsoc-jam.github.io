@@ -29,7 +29,7 @@ Malisa is sick :cry: and focused on getting better :tea:
         - Here is the stack [backtrace](https://www.irccloud.com/pastebin/9kTP1yBn/).
         - Frame is older with higher frame number, i.e. `frame #6` is called before `frame #5`.
         - `frame #6` shows that `to_jsval` was called. This in turn calls `JS_WrapValue` in `frame #5`. This in turn calls `JSCompartment::wrap` in `frame #4`.
-        - `JSCompartment::wrap` has a parameter that is `this=&0x0`. `0x0` is a null pointer!!! We have a memory-unsafe code here!!! Woohoo!
+        - `JSCompartment::wrap` is a C++ code in SpiderMonkey, a JavaScript engine. `JSCompartment::wrap` has a parameter that is `this=&0x0`. `0x0` is a null pointer!!! We have a memory-unsafety here!!! Woohoo!
 
 - Body
     - Read the spec and some more about Unicode encodings in order to understand the UTF-8 decoder. Wrote a little code. Progress was slow due to being sick today.
