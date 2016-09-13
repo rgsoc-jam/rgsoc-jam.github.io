@@ -8,6 +8,7 @@ tags: [log, rust, servo]
 authors: Jeena and Malisa
 ---
 We went to RustConf last Saturday, and it was AWESOME.
+
 ![jammin the rustconf](/img/jammin-the-rustconf.jpg)
 
 Malisa is sick :cry: and focused on getting better :tea:
