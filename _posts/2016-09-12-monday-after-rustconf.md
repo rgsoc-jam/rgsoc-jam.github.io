@@ -28,7 +28,7 @@ Malisa is sick :cry: and focused on getting better :tea:
     - So, after using the debugger, this is what we learned:
         - Here is the stack [backtrace](https://www.irccloud.com/pastebin/9kTP1yBn/).
         - Frame is older with higher frame number, i.e. `frame #6` is called before `frame #5`.
-        - `frame #6` shows that `to_jsval` was called. This in turn calls `JS_WrapValue` in `frame #5`. This in tern calls `JSCompartment::wrap` in `frame #4`.
+        - `frame #6` shows that `to_jsval` was called. This in turn calls `JS_WrapValue` in `frame #5`. This in turn calls `JSCompartment::wrap` in `frame #4`.
         - `JSCompartment::wrap` has a parameter that is `this=&0x0`. `0x0` is a null pointer!!! We have a memory-unsafe code here!!! Woohoo!
 
 - Body
@@ -37,7 +37,7 @@ Malisa is sick :cry: and focused on getting better :tea:
 ## Things we learned:
 - When you write `.` after an object, it automatically derefs! For example, if I do `fetch_context.lock()`, I'm derefing `fetch_context` then applying the `lock()` method.
 - assigning different types to the same binding name (via let statements) seems to be acceptable practice, at least in some contexts.
-- `0x0` is the synonym to null pointer in C++! If your stack backtrace includes `0x0`
+- `0x0` is the synonym to null pointer in C++! If your stack backtrace includes `0x0` that's probably not something you wanted :)
 - When debugging Servo, you can use the `--debug` tag, i.e. `./mach run -d ~/src/fetch_example.html --debug`. Servo uses lldb debugger by default.
 - You can set a breakpoint, for example, if you want the code to pause when it calls `rust_panic` function, you can write `b rust_panic` `<ENTER>` `run`.
 - While you're at the breakpoint, (or maybe some other time too but I'm not too sure) you can type `bt` which will print all the backtrace! COOL.
