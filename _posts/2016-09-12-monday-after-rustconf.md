@@ -10,7 +10,7 @@ authors: Jeena and Malisa
 We went to RustConf last Saturday, and it was AWESOME.
 ![jammin the rustconf](/img/jammin-the-rustconf.jpg)
 
-Malisa is sick :face_with_thermometer: and focused on getting better :tea:
+Malisa is sick :cry: and focused on getting better :tea:
 
 ## Things we did:
 - Updating Headers
