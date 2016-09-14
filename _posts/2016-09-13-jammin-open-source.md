@@ -8,7 +8,7 @@ tags: [log, rust, servo]
 authors: Jeena and Malisa
 ---
 
-Day 50! Today was a good day. We listened to our mentor Josh give a great talk about [Optimizing your project for contribution](http://www.oreilly.com/pub/e/3790). As mentees, we really appreciate all the work that's put into making Servo accessible to beginners.
+Day 50! Today was a good day. We listened to our mentor Josh give a great talk about [Optimizing your project for contribution](http://www.joshmatthews.net/oscon16/). As mentees, we really appreciate all the work that's put into making Servo accessible to beginners.
 
 ## Things we did:
 - Promise in Fetch
