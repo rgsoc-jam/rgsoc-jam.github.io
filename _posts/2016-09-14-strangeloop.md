@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Day 51: On our way to StrangeLoop!!""
+title:  "Day 51: On our way to StrangeLoop!!"
 date:   2016-09-14
 categories: [log]
 comments: false
