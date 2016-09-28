@@ -13,7 +13,7 @@ authors: Jeena and Malisa
     - Started fixing the Body implementation based on jdm's feedback
     - Filed issue [#13465](https://github.com/servo/servo/issues/13465) related to allowing trait object in promise.rs.
     - Filed issue [#13464](https://github.com/servo/servo/issues/13464) about rethrowing exceptions instead of clearing pending JS exceptions in Body's `Json()` method.
-    - The error we were getting was due to having an error in the webidl! We should have used `Primse<any>` instead of `Promise<JSON>`.
+    - The error we were getting was due to having an error in the webidl! We should have used `Promise<any>` instead of `Promise<JSON>`.
     - Looked into [form data crate](https://mikedilger.github.io/formdata/formdata/index.html) for parsing Form Data. `formdata::read_formdata` requires a reader, and I'm not entirely sure how we can use this parser without stream or HttpReader.
 - General
     - We had lunch with Coach Stefan! :clap: We started thinking about what to do after this Friday when the summer of code is over...
