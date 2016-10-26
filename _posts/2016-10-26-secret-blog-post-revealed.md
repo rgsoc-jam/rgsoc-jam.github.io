@@ -6,6 +6,7 @@ categories: [log]
 comments: false
 tags: [log, servo]
 authors: Jeena and Malisa
+---
 
 In our last blog (wow, it's already been almost a month!) we mentioned a sEcReT bLoG pOsT!
 
